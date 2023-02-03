@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+/* ==================================================================*/
+/* GENERAL ==========================================================*/
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  /* Visual border*/
+  outline: solid 1px red;
+  background-color: aqua;
+  /*------------------------*/
+  margin-top: 3rem;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 10fr 10fr 3rem;
+  grid-template-areas: "h h h" "m m m" "f f f";
+}
+
+/* ==================================================================*/
+/* NAVIGATION =======================================================*/
+nav {
+  /* Visual border*/
+  outline: solid 1px green;
+  background-color: burlywood;
+  /*------------------------*/
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 3rem;
+}
+
+/* ==================================================================*/
+/* HEADER ===========================================================*/
+header {
+  /* Visual border*/
+  background-color: white;
+  /*------------------------*/
+  grid-area: h;
+}
+
+/* ==================================================================*/
+/* MAIN ===========================================================*/
+main {
+  /* Visual border*/
+  background-color: violet;
+  /*------------------------*/
+  grid-area: m;
+}
+
+/* ==================================================================*/
+/* FOOTER ===========================================================*/
+footer {
+  /* Visual border*/
+  background-color: greenyellow;
+  /*------------------------*/
+  grid-area: f;
+}/*# sourceMappingURL=style.css.map */
